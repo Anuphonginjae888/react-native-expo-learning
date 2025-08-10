@@ -2,15 +2,17 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../pages/HomeScreen";
 import DetailsScreen from "../pages/DetailsScreen";
 import ProfileScreen from "../pages/ProfileScreen";
+import CounterScreen from "../pages/CounterScreen"; 
 
-const stack = createStackNavigator();
+const Stack = createStackNavigator();
 
-export default function navigation() {
+export default function Navigation() {
   return (
-    <stack.Navigator>
-      <stack.Screen name="Home" component={HomeScreen} />
-      <stack.Screen name="Details" component={DetailsScreen} />
-      <stack.Screen name="Profile" component={ProfileScreen} />
-    </stack.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
+      <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen name="Count" component={CounterScreen} />
+    </Stack.Navigator>
   );
 }
