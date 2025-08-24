@@ -5,6 +5,7 @@ import ProfileScreen from "../pages/ProfileScreen";
 import CounterScreen from "../pages/CounterScreen";
 import FlexScreen from "../pages/FlexScreen";
 import StyleExampleScreen from "../pages/StyleExampleScreen"; 
+import LoginScreen from "../pages/LoginScreen"; 
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,7 @@ export default function Navigation() {
       <Stack.Screen name="Count" component={CounterScreen} />
       <Stack.Screen name="FlexScreen" component={FlexScreen} />
       <Stack.Screen name="StyleScreen" component={StyleExampleScreen} />
+      <Stack.Screen name="LoginScreen" component={LoginScreen} />
     </Stack.Navigator>
   );
 }

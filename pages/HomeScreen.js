@@ -24,6 +24,10 @@ export default function HomeScreen({ navigation }) {
         title="Go to Style"
         onPress={() => navigation.navigate("StyleScreen")}
       />
+      <Button
+        title="Go to Login"
+        onPress={() => navigation.navigate("LoginScreen")}
+      />
     </View>
   );
 }
